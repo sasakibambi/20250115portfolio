@@ -40,15 +40,16 @@
           <!-- images/01に配置した、FURIMAの画像（PC版）のパスを記載する -->
           <img src="../images/work/01/pict-work01-firstview_pc.jpg" class="show-pc">
           <!-- images/01に配置した、FURIMAの画像（SP版）のパスを記載する -->
-          <img src="../images/work/01/pict-work01-firstview_sp.jpg" class="show-sp">
+          <img src="../images/work/01/pict-work01-firstview_pc.jpg" class="show-sp">
         </div>
         <div class="p-work-firstview__text-area">
           <h3 class="p-work-firstview__text-titile">開発環境</h3>
           <!-- 記載番号：3 -->
-          <p class="p-work-firstview__text">Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello
+          <p class="p-work-firstview__text">Ruby / Ruby on Rails / MySQL / GitHub / Render / Visual Studio Code / Trello
           </p>
           <!-- 記載番号：4 -->
-          <p class="p-work-firstview__text-link"><a href="__URL__" target="_blank">https://github.com/XXXXXX/xxxxxx</a>
+          <p class="p-work-firstview__text-link"><a href="https://github.com/sasakibambi/furima-40499"
+              target="_blank">https://github.com/sasakibambi/furima-40499</a>
           </p>
         </div>
       </div>
@@ -67,7 +68,8 @@
               <tr>
                 <th>URL</th>
                 <!-- 記載番号：6 -->
-                <td><a href="__URL__" target="_blank">http://hoge.heroku.com</a></td>
+                <td><a href="https://furima-40499-toz8.onrender.com"
+                    target="_blank">https://furima-40499-toz8.onrender.com</a></td>
               </tr>
               <tr>
                 <th>ID</th>
@@ -146,18 +148,17 @@
             <div class="p-work-about__item-block p-work-about__item-block-2column">
               <div class="p-work-about__item-block-pict obj-fit-img">
                 <!-- images/01に配置した、記載内容を表す画像のパスを記載する -->
-                <img src="../images/work/01/pict-work01-about-dammy.jpg">
+                <img src="../images/work/01/pict-work01-render.jpg">
               </div>
               <!-- 記載番号：15 -->
               <div class="p-work-about__item-block-text">
                 <p>
-                  追加実装についてのテストコードを記述するときに苦労しました。
+                  クレジット決済の実装が非常に難しかったです。特に、JavaScriptを使用してPayJPのクレジットカードトークンを生成する部分に苦労しました。
                 </p>
                 <p>
-                  フォロー機能については、結合テストを書き、ユーザーが実際に操作するときの状況を確認しようと試みました。しかし、フォローのボタンの変化は非同期通信を利用して実装しているため、テストコードに工夫が必要でした。
+                  また、Renderへのデプロイも難しかったです。特に環境変数の設定に苦労しました。環境変数の適切な設定はアプリケーションのセキュリティや動作に直結するため、何度も調整を繰り返し、ようやく正しくデプロイできました。
                 </p>
-                <p>
-                  公式ドキュメントを読み直したり、同様のケースをインターネットで探したりすることで、確からしい結合テストコードを記述することができました。カリキュラムでは学ばなかった部分であるため非常に苦労しましたが、大変勉強になりました。テストコードの重要性も再認識することができました。
+                <p>公式ドキュメントを何度も読み返し、同様のケースをインターネットで探しながら解決策を見つけるという方法を学び、少しずつ問題を解決していくことで達成感とプログラミングの楽しさを味わうことができました。
                 </p>
               </div>
             </div>
@@ -167,15 +168,18 @@
             <div class="p-work-about__item-block p-work-about__item-block-2column">
               <div class="p-work-about__item-block-pict obj-fit-img">
                 <!-- images/01に配置した、記載内容を表す画像のパスを記載する -->
-                <img src="../images/work/01/pict-work01-about-dammy.jpg">
+                <img src="../images/work/01/pict-work01-heart.jpg">
               </div>
               <!-- 記載番号：16 -->
               <div class="p-work-about__item-block-text">
                 <p>
-                  すでに実装済みのコメント投稿機能に、画像を投稿できるようにしたいと考えています。
+                  今後は、ユーザー同士が交流できるように、フォロー機能、いいね機能、コメント機能を追加実装したいと考えております。
                 </p>
                 <p>
-                  フリマアプリにおける購入者と出品者のやり取りについては、商品の状態についてのコミュニケーションが多く行われています。したがって、そのコミュニケーションがより円滑になるように、画像とともに商品の状態を説明できるようにしたいと考えています。
+                  人と人とがふれあう場を提供するアプリを作りたいと考えており、特にフリマアプリにおいては、購入者と出品者のコミュニケーションが円滑に行えることが重要です。
+                </p>
+                <p>
+                  上記の機能を追加実装することによりユーザー同士の交流を促進し、アプリ内でのコミュニティ形成をサポートできればと考えております。
                 </p>
               </div>
             </div>
@@ -199,7 +203,7 @@
                 <!-- 記載番号：15 -->
                 <h3>FURIMA（フリマアプリ）</h3>
                 <!-- 記載番号：16 -->
-                <p>Ruby / Ruby on Rails / MySQL / GitHub / Heroku / Visual Studio Code / Trello</p>
+                <p>Ruby / Ruby on Rails / MySQL / GitHub / Render / Visual Studio Code / Trello</p>
               </div>
               <div class="p-work-others__item-btn-block">
                 <a href="01.html" class="button">More</a>
@@ -214,7 +218,7 @@
                 <!-- 記載番号：17 -->
                 <h3>佐々木チャットボット（チャットボット）</h3>
                 <!-- 記載番号：18 -->
-                <p>Python / Flask /openAI / LINE / GitHub / render / Visual Studio Code</p>
+                <p>Python / Flask /openAI / LINE / GitHub / Render / Visual Studio Code</p>
               </div>
               <div class="p-work-others__item-btn-block">
                 <a href="02.html" class="button">More</a>
