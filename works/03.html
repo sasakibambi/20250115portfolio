@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube サムネイルポートフォリオ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #444;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* 2列固定 */
+      gap: 20px;
+    }
+
+    .thumbnail {
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .thumbnail:hover {
+      transform: scale(1.05);
+    }
+
+    .thumbnail img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .thumbnail a {
+      display: block;
+      text-decoration: none;
+      color: #333;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>YouTube サムネイルポートフォリオ</h1>
+    <div class="grid">
+      <div class="thumbnail">
+        <img src="../images/work/00/bird1.jpg" alt="サムネイル 1">
+        サムネイル 1
+      </div>
+      <div class="thumbnail">
+        <img src="../images/work/00/bird2.jpg" alt="サムネイル 2">
+        サムネイル 2
+      </div>
+      <div class="thumbnail">
+        <img src="../images/work/00/bird3-A.jpg" alt="サムネイル 3">
+        サムネイル 3
+        </a>
+      </div>
+      <div class="thumbnail">
+        <img src="../images/work/00/bird3-B.jpg" alt="サムネイル 4">
+        サムネイル 4
+        </a>
+      </div>
+      <div class="thumbnail">
+        <img src="../images/work/00/bird4.jpg" alt="サムネイル 5">
+        サムネイル 5
+        </a>
+      </div>
+      <div class="thumbnail">
+        <img src="../images/work/00/bird5.jpg" alt="サムネイル 6">
+        サムネイル 6
+        </a>
+      </div>
+      <div class="thumbnail">
+        <img src="../images/work/00/raccoondog1.jpg" alt="サムネイル 7">
+        サムネイル 7
+        </a>
+      </div>
+      <div class="thumbnail">
+        <img src="../images/work/00/raccoondog2.jpg" alt="サムネイル 8">
+        サムネイル 8
+        </a>
+      </div>
+      <div class="thumbnail">
+        <!-- <a href="https://example.com/portfolio9" target="_blank"> -->
+        <img src="../images/work/00/raccoondog3.jpg" alt="サムネイル 9">
+        サムネイル 9
+        </a>
+      </div>
+      <!-- <div class="thumbnail">
+        <a href="https://example.com/portfolio10" target="_blank">
+        <img src="thumbnail10.jpg" alt="サムネイル 10">
+        サムネイル 10
+        </a>
+      </div> -->
+    </div>
+  </div>
+</body>
+
+</html>

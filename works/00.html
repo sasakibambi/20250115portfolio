@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品集</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    /* グローバルスタイル */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1,
+    h2 {
+      font-size: 5rem;
+      font-weight: 800;
+      text-align: center;
+      letter-spacing: .1em;
+      line-height: 1;
+    }
+
+    h3 {
+      font-size: 2.6rem;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+
+    h4 {
+      margin: 32px 0 0 0;
+      font-size: 2rem;
+      line-height: 1;
+      font-weight: 700;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    /* カルーセルスタイル */
+    .carousel {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .thumbnail {
+      flex: 0 0 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .thumbnail img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .nav-button.left {
+      left: 10px;
+    }
+
+    .nav-button.right {
+      right: 10px;
+    }
+
+    /* セクションスタイル */
+    .p-work-summary,
+    .p-work-about {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .p-work-summary table,
+    .p-work-about table {
+      width: 100%;
+      border-collapse: collapse;
+      /* margin-bottom: 20px; */
+    }
+
+    table th,
+    table td {
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    table th {
+      text-align: left;
+      background-color: #f4f4f9;
+    }
+  </style>
+</head>
+
+<body class="p-work">
+  <!-- ヘッダー -->
+  <header id="header" class="header">
+    <div class="header__logo">
+      <h1>
+        <a href="../">
+          <span class="header__logo-title">Hitomi Sasaki</span>
+          <span class="header__logo-sub">Portfolio</span>
+        </a>
+      </h1>
+    </div>
+    <nav class="header__gnav">
+      <ul class="header__gnav-list">
+        <li class="header__gnav-item"><a href="../#a-profile">PROFILE</a></li>
+        <li class="header__gnav-item"><a href="../#a-skill">SKILL</a></li>
+        <li class="header__gnav-item"><a href="../#a-works">WORKS</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Figma作品集セクション -->
+  <section>
+    <div class="container">
+      <h1>Design collection</h1>
+      <!-- <h2>YouTubeのサムネイル</h2> -->
+      <div class="carousel" id="carousel">
+        <div class="thumbnail">
+          <img src="../images/work/00/bird1.jpg" alt="サムネイル 1">
+        </div>
+        <div class="thumbnail">
+          <img src="../images/work/00/bird2.jpg" alt="サムネイル 2">
+        </div>
+        <div class="thumbnail">
+          <img src="../images/work/00/bird3-A.jpg" alt="サムネイル 3">
+        </div>
+        <div class="thumbnail">
+          <img src="../images/work/00/bird3-B.jpg" alt="サムネイル 4">
+        </div>
+        <div class="thumbnail">
+          <img src="../images/work/00/bird4.jpg" alt="サムネイル 5">
+          </a>
+        </div>
+        <div class="thumbnail">
+          <img src="../images/work/00/bird5.jpg" alt="サムネイル 6">
+          </a>
+        </div>
+        <div class="thumbnail">
+          <img src="../images/work/00/raccoondog1.jpg" alt="サムネイル 7">
+          </a>
+        </div>
+        <div class="thumbnail">
+          <img src="../images/work/00/raccoondog2.jpg" alt="サムネイル 8">
+          </a>
+        </div>
+        <div class="thumbnail">
+          <!-- <a href="https://example.com/portfolio9" target="_blank"> -->
+          <img src="../images/work/00/raccoondog3.jpg" alt="サムネイル 9">
+          </a>
+        </div>
+      </div>
+      <button class="nav-button left" id="prev">&#9664;</button>
+      <button class="nav-button right" id="next">&#9654;</button>
+      <div>
+        <h4>
+          Figmaアカウント<a
+            href="https://www.figma.com/design/5yTbefPOQyf71bNdsyF3nY/Untitled?node-id=0-1&t=gtN3s9nhP6xfkLlZ-1">ワイヤーフレームはこちら</a>
+        </h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- オリジナルアプリセクション -->
+  <section>
+    <div class="container">
+      <!-- <h1>Figma作品集</h1> -->
+      <!-- <h2></h2> -->
+      <div class="p-work-summary">
+        <h3>YouTubeサムネイル</h3>
+        <h4>依頼内容</h4>
+        <p>
+          YouTubeチャンネルのサムネイルデザインをご依頼いただきました。クライアント様からは、「女性向けのかわいらしいデザインにしてほしい」とのリクエストでした。<br><br>
+        </p>
+        <h4>制作ポイント</h4>
+        <p>
+          10代から30代の女性をメインターゲットに設定し、可愛らしく明るい健康的な雰囲気を意識して仕上げました。<br><br>
+        </p>
+        <table>
+          <tr>
+            <th>制作時間</th>
+            <td>3.5時間</td>
+          </tr>
+          <tr>
+            <th>URL</th>
+            <td><a href="https://lin.ee/AZ7TUvO" target="_blank">https://lin.ee/AZ7TUvO</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class="p-work-about">
+        <!-- <h3>制作ポイント</h3>
+        <p>
+          10代から30代の女性をメインターゲットに設定し、可愛らしく明るい健康的な雰囲気を意識して仕上げました。
+        </p> -->
+        <!-- <ul>
+          <li>3問目以降は固定メッセージを表示。</li>
+          <li>250文字以内で回答。</li>
+        </ul> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- スクリプト -->
+  <script>
+    const carousel = document.getElementById('carousel');
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+
+    let currentIndex = 0;
+    const totalItems = carousel.children.length;
+
+    const updateCarousel = () => {
+      const offset = -currentIndex * 100;
+      carousel.style.transform = `translateX(${offset}%)`;
+    };
+
+    prevButton.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+      updateCarousel();
+    });
+
+    nextButton.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % totalItems;
+      updateCarousel();
+    });
+  </script>
+</body>
+
+</html>
