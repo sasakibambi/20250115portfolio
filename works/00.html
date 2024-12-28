@@ -113,11 +113,30 @@
     table td {
       padding: 10px;
       border: 1px solid #ccc;
+      min-width: 100px;
     }
 
     table th {
       text-align: left;
       background-color: #f4f4f9;
+    }
+
+    /* 通常のリンクスタイル */
+    .hover-link {
+      text-decoration: none;
+      color: #007BFF;
+      /* リンクの色 */
+      border: none;
+      transition: all 0.3s ease;
+      /* スムーズなアニメーション */
+    }
+
+    /* ホバー時のスタイル */
+    .hover-link:hover {
+      border-bottom: 2px solid #FF69B4;
+      /* ピンクの下線 */
+      color: #FF69B4;
+      /* ホバー時のリンク色を変更（任意） */
     }
   </style>
 </head>
@@ -145,7 +164,7 @@
   <!-- Figma作品集セクション -->
   <section>
     <div class="container">
-      <h1>Design collection</h1>
+      <h1>My Figma Design Portfolio</h1>
       <!-- <h2>YouTubeのサムネイル</h2> -->
       <div class="carousel" id="carousel">
         <div class="thumbnail">
@@ -186,8 +205,13 @@
       <button class="nav-button right" id="next">&#9654;</button>
       <div>
         <h4>
-          Figmaアカウント<a
-            href="https://www.figma.com/design/1IrMmhU12G5oJw88EC4OPM/%E7%84%A1%E9%A1%8C?node-id=0-1&t=H8I8XAUtyqC3wGH7-1">ワイヤーフレームはこちら</a>
+          <tr>
+            <th>This is my figma account→</th>
+            <td><a class="hover-link"
+                href="https://www.figma.com/design/1IrMmhU12G5oJw88EC4OPM/%E7%84%A1%E9%A1%8C?node-id=0-1&t=H8I8XAUtyqC3wGH7-1"
+                target="_blank">♡Click here♡</a>
+            </td>
+          </tr>
         </h4>
       </div>
     </div>
@@ -215,7 +239,10 @@
           </tr>
           <tr>
             <th>URL</th>
-            <td><a href="https://lin.ee/AZ7TUvO" target="_blank">https://lin.ee/AZ7TUvO</a></td>
+            <td><a
+                href="https://www.figma.com/design/1IrMmhU12G5oJw88EC4OPM/%E7%84%A1%E9%A1%8C?node-id=0-1&t=H8I8XAUtyqC3wGH7-1"
+                target="_blank">https://www.figma.com/design/1IrMmhU12G5oJw88EC4OPM/%E7%84%A1%E9%A1%8C?node-id=0-1&t=H8I8XAUtyqC3wGH7-1</a>
+            </td>
           </tr>
         </table>
       </div>
