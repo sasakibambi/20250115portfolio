@@ -882,7 +882,6 @@ section:nth-of-type(2n) {
 
 .firstview {
   padding: 132px 5% 64px;
-  background: #F7F1F0;
   overflow: hidden
 }
 
@@ -902,43 +901,46 @@ section:nth-of-type(2n) {
 .firstview-bg:before {
   content: "";
   position: absolute;
-  width: 500px;
-  height: 230px;
-  background: url("../images/bg-firstview-left_pc.png") no-repeat border-box left top/contain;
+  width: 800px;
+  height: 500px;
+  background: url("../images/sakura-left.png") no-repeat border-box left top/contain;
   top: 0;
   left: 0
 }
 
 @media screen and (max-width: 599px) {
   .firstview-bg:before {
-    width: 240px;
-    height: 140px;
-    background: url("../images/bg-firstview-left_sp.png") no-repeat border-box left top/contain
+    width: 500px;
+    height: 700px;
+    background: url("../images/sakura-left.png") no-repeat border-box left top/contain
   }
 }
 
 .firstview-bg:after {
   content: "";
   position: absolute;
-  width: 500px;
-  height: 220px;
-  background: url("../images/bg-firstview-right_pc.png") no-repeat border-box right bottom/contain;
+  width: 800px;
+  height: 500px;
+  background: url("../images/sakura-right.png") no-repeat border-box right bottom/contain;
   bottom: 0;
   right: 0
 }
 
 @media screen and (max-width: 599px) {
   .firstview-bg:after {
-    width: 200px;
-    height: 100px;
-    background: url("../images/bg-firstview-right_sp.png") no-repeat border-box right bottom/contain
+    width: 500px;
+    height: 500px;
+    background: url("../images/sakura-right.png") no-repeat border-box right bottom/contain
   }
 }
 
 .firstview__inner {
   position: relative;
   margin: 0 auto;
-  z-index: 50
+  z-index: 50;
+  background-image: url('./images/sakura.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .firstview__main {
@@ -947,7 +949,10 @@ section:nth-of-type(2n) {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center
+  justify-content: center;
+  background-image: url('../images/sakura.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 @media screen and (max-width: 599px) {
@@ -958,7 +963,10 @@ section:nth-of-type(2n) {
     flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    background-image: url('../images/sakura.jpg');
+    background-size: cover;
+    background-position: center;
   }
 }
 
