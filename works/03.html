@@ -19,6 +19,52 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: 400;
   }
+
+  .firstview-bg1 {
+    position: relative;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    z-index: -1;
+    /* 背景をテキストの後ろに配置するためにz-indexを設定 */
+  }
+
+  .firstview-bg1:before {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background: url("../images/sakura-left2.png") no-repeat border-box left top/contain;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* 背景をテキストの後ろに配置するためにz-indexを設定 */
+  }
+
+  @media screen and (max-width: 599px) {
+    .firstview-bg1:before {
+      width: 500px;
+      height: 700px;
+      background: url("../images/sakura-left2.png") no-repeat border-box left top/contain
+    }
+  }
+
+  .firstview-bg1:after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background: url("../images/sakura-right2.png") no-repeat border-box right bottom/contain;
+    bottom: 0;
+    right: 0
+  }
+
+  @media screen and (max-width: 599px) {
+    .firstview-bg:after {
+      width: 500px;
+      height: 500px;
+      background: url("../images/sakura-right2.png") no-repeat border-box right bottom/contain
+    }
+  }
 </style>
 
 <body class="p-work">
@@ -124,8 +170,8 @@
         </ul>
       </div>
     </section>
-    <section class="p-work-outline">
-      <div class="section-inner">
+    <section class="p-work-outline firstview-bg1">
+      <div class="section-inner ">
         <div class="heading">
           <h2>OUTLINE<span>アプリケーションの概要</span></h2>
         </div>

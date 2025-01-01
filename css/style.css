@@ -903,7 +903,7 @@ section:nth-of-type(2n) {
   position: absolute;
   width: 800px;
   height: 500px;
-  background: url("../images/sakura-left.png") no-repeat border-box left top/contain;
+  background: url("../images/sakura-left3.png") no-repeat border-box left top/contain;
   top: 0;
   left: 0
 }
@@ -912,7 +912,7 @@ section:nth-of-type(2n) {
   .firstview-bg:before {
     width: 500px;
     height: 700px;
-    background: url("../images/sakura-left.png") no-repeat border-box left top/contain
+    background: url("../images/sakura-left3.png") no-repeat border-box left top/contain
   }
 }
 
@@ -921,7 +921,7 @@ section:nth-of-type(2n) {
   position: absolute;
   width: 800px;
   height: 500px;
-  background: url("../images/sakura-right.png") no-repeat border-box right bottom/contain;
+  background: url("../images/sakura-right3.png") no-repeat border-box right bottom/contain;
   bottom: 0;
   right: 0
 }
@@ -930,7 +930,7 @@ section:nth-of-type(2n) {
   .firstview-bg:after {
     width: 500px;
     height: 500px;
-    background: url("../images/sakura-right.png") no-repeat border-box right bottom/contain
+    background: url("../images/sakura-right3.png") no-repeat border-box right bottom/contain
   }
 }
 

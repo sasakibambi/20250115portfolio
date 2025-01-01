@@ -19,6 +19,52 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: 400;
   }
+
+  .firstview-bg1 {
+    position: relative;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover;
+    z-index: -1;
+    /* 背景をテキストの後ろに配置するためにz-indexを設定 */
+  }
+
+  .firstview-bg1:before {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background: url("../images/sakura-left2.png") no-repeat border-box left top/contain;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* 背景をテキストの後ろに配置するためにz-indexを設定 */
+  }
+
+  @media screen and (max-width: 599px) {
+    .firstview-bg1:before {
+      width: 500px;
+      height: 700px;
+      background: url("../images/sakura-left2.png") no-repeat border-box left top/contain
+    }
+  }
+
+  .firstview-bg1:after {
+    content: "";
+    position: absolute;
+    width: 800px;
+    height: 500px;
+    background: url("../images/sakura-right2.png") no-repeat border-box right bottom/contain;
+    bottom: 0;
+    right: 0
+  }
+
+  @media screen and (max-width: 599px) {
+    .firstview-bg:after {
+      width: 500px;
+      height: 500px;
+      background: url("../images/sakura-right2.png") no-repeat border-box right bottom/contain
+    }
+  }
 </style>
 
 <body class="p-work">
@@ -123,30 +169,32 @@
         </ul>
       </div>
     </section>
-    <section class="p-work-outline">
+    <section class="p-work-outline firstview-bg1">
       <div class="section-inner">
         <div class="heading">
           <h2>OUTLINE<span>アプリケーションの概要</span></h2>
         </div>
         <div class="contents">
           <!-- 記載番号：11 -->
-          <div class="p-work-outline__text">
-            <p>※現在開発途中のアプリケーションです。</p>
-            <p>
-              オリジナルアプリケーションとして、PythonとOpenAIを使用したオリジナルチャットボットを作成しLINEで公開しました。</li>
-            </p>
-            <p>
-              ＜オリジナル機能＞<br><br>
-              ●3問の質問に250文字以内で答えるチャットボット<br><br>
-              ●4問目以降の質問はOpenAIを使用せず、固定メッセージを表示<br><br>
-              ●250文字以内の質問に対応するよう設定(日本語以外も対応)<br><br>
-              ●250文字以上の質問をすると、OpenAIを使用せず、固定メッセージを表示<br><br>
-              ●回答者は聡明さと優しさを持ち合わせた女性を想定<br><br>
-              ●openAIのプロンプトに『必ず質問者の味方になること。』という一文を挿入<br><br>
-            </p>
+          <div class="p-work-about__item-block p-work-about__item-block-2column">
+            <div class="p-work-about__item-block-text">
+              <div class="p-work-outline__text">
+                <p>※現在開発途中のアプリケーションです。</p>
+                <p>
+                  オリジナルアプリケーションとして、PythonとOpenAIを使用したオリジナルチャットボットを作成しLINEで公開しました。</li>
+                </p>
+                <p>
+                  ＜オリジナル機能＞<br><br>
+                  ●3問の質問に250文字以内で答えるチャットボット<br><br>
+                  ●4問目以降の質問はOpenAIを使用せず、固定メッセージを表示<br><br>
+                  ●250文字以内の質問に対応するよう設定(日本語以外も対応)<br><br>
+                  ●250文字以上の質問をすると、OpenAIを使用せず、固定メッセージを表示<br><br>
+                  ●回答者は聡明さと優しさを持ち合わせた女性を想定<br><br>
+                  ●openAIのプロンプトに『必ず質問者の味方になること。』という一文を挿入<br><br>
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
     </section>
     <section class="p-work-about">
       <div class="section-inner">
