@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <!-- 記載番号：2 -->
-  <title>オリアプ（オリジナルアプリ）</title>
+  <title>ゴミ出しの質問に3問答えるチャットボット(Difyを使用しノーコードで開発)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -106,10 +106,10 @@
           <p class="p-work-firstview__text">Dify / OpenAi / GitHub / Visual Studio Code / Cursor
           </p>
           <!-- 記載番号：4 -->
-          <p class="p-work-firstview__text-link">
+          <!-- <p class="p-work-firstview__text-link">
             <a href="https://udify.app/chatbot/x9UNgOKlw03s8XoX"
               target="_blank">https://udify.app/chatbot/x9UNgOKlw03s8XoX</a>
-          </p>
+          </p> -->
         </div>
     </section>
     <section class="p-work-summary">
@@ -186,7 +186,7 @@
                 ＜オリジナル機能＞<br><br>
                 ●3問の質問に250文字程度で答えるチャットボット<br><br>
                 ●4問目以降の質問は固定メッセージを表示<br><br>
-                ●語尾が「〜のゴミの出し方について教えて」以外の質問をすると固定メッセージを表示<br><br>
+                ●語尾が「〜のゴミの出し方について教えて」以外の質問をすると固定メッセージを表示<br>
                 ●テキストで質問するとテキストと音声で回答する<br><br>
                 ●プロンプトに「必ず質問者の味方になること」という一文を挿入<br><br>
               </p>
@@ -201,10 +201,13 @@
             <h3>開発に至った経緯</h3>
             <!-- 記載番号：12 -->
             <div class="p-work-about__item-block">
+              <strong>
+                <p>
+                  以前、PythonとOpenAIを使用しチャットボットを作成しLINEで公開しましたが、その際の課題を解決するため、Dify(生成AIツール)を使用しノーコードで効率的にチャットボットを作成しました。<br>
+                </p>
+              </strong>
               <p>
-                以前、PythonとOpenAIを使用しチャットボットを作成しLINEで公開しましたが、その際の課題を解決するため、Dify(生成AIツール)を使用しノーコードで効率的にチャットボットを作成しました。<br>
-              </p>
-              <p>
+                <br>
                 前回のアプリと同様に、ユーザーに寄り添い、心の支えとなるツールを作成したいという強い思いが動機です。そのためには、前回のチャットボット作成時の課題を解消することが必要だと考え、より効率的でさらに高度な技術を活用するために生成AIツール(Dify)の理解と実践が必要だと考えました。
               </p>
               <p>
@@ -216,7 +219,7 @@
           </li>
           <li class="p-work-about__item">
             <h3>開発で工夫したこと</h3>
-            <div class="p-work-about__item-block p-work-about__item-block-2column">
+            <div class="p-work-about__item-block">
               <!-- <div class="p-work-about__item-block-pict obj-fit-img"> -->
               <!-- images/02に配置した、記載内容を表す画像のパスを記載する -->
               <!-- <img src="../images/work/02/pict-work02-sasakichatbot.jpg">
@@ -244,22 +247,18 @@
             <div class="p-work-about__item-block p-work-about__item-block-2column">
               <div class="p-work-about__item-block-pict obj-fit-img">
                 <!-- images/02に配置した、記載内容を表す画像のパスを記載する -->
-                <img src="../images/work/03/motunabe.png" alt="もつ鍋">
+                <img src="../images/work/03/motunabe4.png" alt="もつ鍋">
               </div>
               <!-- 記載番号：14 -->
               <div class="p-work-about__item-block-text">
                 <p>
-                  将来的には、博多弁のような優しい方言を取り入れて、自然で温かみのある会話ができるチャットボットにしていきたいと考えています。
+                  現在実装している音声読み上げ機能（TTS）では、日本語の発話が不自然になりやすく、OpenAIのプロンプトを使用した場合でも、博多弁が完全に再現されず他の地方の方言が混じる結果となっています。正確な方言の再現は、地域への敬意を表す上でも重要であると考えています。<br>
                 </p>
                 <p>
-                  具体的に考えている方法が以下の4点です。<br>
-                  ●方言変換のルール定義を用いた簡単な置き換え処理。<br>
-                  ●自然言語処理モデルのファインチューニングを通じたより自然な方言応答の生成。<br>
-                  ●テンプレートメッセージを事前に準備しておくことで柔軟な対応。<br>
-                  ● 方言モードの選択肢をユーザーに提供することで、会話体験をカスタマイズ。<br>
+                  この課題を解決するため、<strong>Difyで構築したTTSを用いたチャットボットのシステムとPythonベースの音声合成システムを組み合わせた新しいチャットボット</strong>を開発することを考えています。<br>
                 </p>
                 <p>
-                  そして、リソースを確保することで、質問回数の制限をなくし、誰でもいつでも気軽に利用できるように広めていきたいと考えています。
+                  具体的には<strong>音声合成システムを使用し博多弁の音声を録音したものを再生する機能を実装したい</strong>と考えています。これによりより正確で自然な対話のできる温かみのあるチャットボットを目指します。
                 </p>
               </div>
             </div>
