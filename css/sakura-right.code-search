@@ -1,0 +1,13 @@
+# Query: sakura-right
+# ContextLines: 1
+
+2 件の結果 - 1 ファイル
+
+css/style.css:
+  923    height: 500px;
+  924:   background: url("../images/strawberry.png") no-repeat border-box right bottom/contain;
+  925    bottom: 0;
+
+  932      height: 500px;
+  933:     background: url("../images/strawberry.png") no-repeat border-box right bottom/contain
+  934    }
